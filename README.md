@@ -3,5 +3,5 @@ reflection to the world through their art. The art would be shared through indiv
 The website will be community driven, meaning that there will be no material profit from any of the posts and works displayed. The website will include community moderation to insure the
 following of ethical rules in addition to an AI tool which will also enforce these rules. This website is aimed to encourage a creative community on all artistic endeavours, discussions of art between people, and
 creative solidarity between users. Rules and conditions will be put in place in order to ensure a smooth and positive environment with in the wbesite. The impact of this is the potential revitalisation of artistic communities which
-robust moderation both manual and automated.Finally, the team was formed of two people, Houssam Khaled and Mohammad Aoun, qho qill bw qorking together swiftly and will be in regular contact through WhatsApp for texting and calling
+robust moderation both manual and automated.Finally, the team was formed of two people, Houssam Khaled and Mohammad Aoun, who will bw qorking together swiftly and will be in regular contact through WhatsApp for texting and calling
 and github for code sharing.
