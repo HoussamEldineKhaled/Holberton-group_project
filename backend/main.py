@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template, redirect
 import sqlite3
 from flask_cors import CORS
 
@@ -15,7 +15,7 @@ def get_db_connection():
 def get_tables():
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM Likes;")
+    cursor.execute("SELECT * FROM Accounts;")
     tables = cursor.fetchall()
     table_names = [table['User_Name'] for table in tables]
     
@@ -34,10 +34,7 @@ def sign_up():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    username = request.form["username"]
-    password = request.form["password"]
-    
-    
+    return render_template('../frontend/login.html')
 
 
 
