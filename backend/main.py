@@ -67,6 +67,24 @@ def login():
     else:
         return jsonify({"Error": "Invalid email or password"}), 401
 
+@app.route('/uploadPost', methods=['POST'])
+def uploadPost():
+    data = request.get_json()
+    
+    title = data.get('title')
+    description = data.get('description')
+    user_id = data.get('user_id')
+    attachments = data.get('attachments', [])
+    
+    if not title or not user_id:
+        return jsonify({'error': 'Title and user_id are required'}), 400
+    
+    conn = get_db_connection()
+    
+    cursor = conn.cursor()
+    cursor.execute('')
+    
+    return "Post Uploaded"
 
 
 if __name__ == '__main__':
