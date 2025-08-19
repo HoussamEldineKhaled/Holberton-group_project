@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts - Holberton</title>
+
+  <link rel="stylesheet" href="posts.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" style="max-width: 900px; margin-inline: auto;">
+      <div class="header" style="display: flex; align-items: center; justify-content: space-between;">
+        <div>
+          <h1>Community Posts</h1>
+          <p>Browse the latest posts shared by the community.</p>
+        </div>
+        <div>
+          <button type="button" class="btn" onclick="window.location.href='upload-post.html'">
+            + Create New Post
+          </button>
+        </div>
+      </div>
+
+      <form id="controls" class="form-grid" style="margin-top: 1rem;">
+        <div class="form-group" style="grid-column: span 2;">
+          <label for="searchQuery">Search</label>
+          <input type="text" id="searchQuery" placeholder="Search title, description, or author name…" />
+        </div>
+
+        <div class="form-group">
+          <label for="userIdFilter">Filter by User ID</label>
+          <input type="number" id="userIdFilter" placeholder="e.g. 5" min="1" />
+        </div>
+
+        <div class="form-group">
+          <label for="sortSelect">Sort</label>
+          <select id="sortSelect">
+            <option value="latest" selected>Latest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pageSize">Page size</label>
+          <select id="pageSize">
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+
+        <div class="form-actions" style="align-self: end;">
+          <button type="button" class="btn" id="applyBtn">Apply</button>
+          <button type="button" class="btn btn-secondary" id="clearBtn">Clear</button>
+        </div>
+      </form>
+
+      <hr class="divider" />
+
+      <div id="meta" class="muted" style="margin-bottom: .5rem;"></div>
+      <ul id="postsList" class="list" aria-live="polite"></ul>
+
+      <div class="pagination">
+        <button class="btn btn-secondary" id="prevBtn" disabled>Previous</button>
+        <span id="pageInfo" class="muted"></span>
+        <button class="btn" id="nextBtn" disabled>Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="posts.js"></script>
+</body>
+
+</html>

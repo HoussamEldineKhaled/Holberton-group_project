@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Post - Holberton</title>
+    <link rel="stylesheet" href="posts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="upload-container">
+        <div class="upload-card">
+            <div class="upload-header">
+                <h1>Create Post</h1>
+                <p>Share your artwork with the community</p>
+            </div>
+
+            <form class="upload-form" id="postForm" novalidate>
+                <input type="hidden" id="userId" name="userId" required>
+
+                <div class="form-group">
+                    <label for="title">Title <span class="required">*</span></label>
+                    <input type="text" id="title" name="title" placeholder="Enter post title" required>
+                    <span class="error-message" id="titleError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description"
+                        placeholder="Write something about your post (optional)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="attachments">Attachments</label>
+                    <input type="file" id="attachments" name="attachments" multiple
+                        accept=".jpg,.jpeg,.mp4,image/jpeg,video/mp4">
+                    <ul id="fileList" class="file-list"></ul>
+                    <small class="hint">You can upload JPG and MP4 files.</small>
+                </div>
+
+                <button type="submit" class="upload-button" id="submitBtn">
+                    <span class="button-text">Submit Post</span>
+                    <div class="loading-spinner" id="loadingSpinner"></div>
+                </button>
+
+                <button type="button" class="clear-button" id="clearBtn">Clear</button>
+
+                <button type="button" class="back-button" onclick="window.location.href='posts.html'">Back</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-message" id="toastMessage"></span>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="upload-post.js"></script>
+</body>
+
+</html>
