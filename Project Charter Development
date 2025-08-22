@@ -1,0 +1,22 @@
+0. The objective of the project is to make a website that fosters art appreciation and community 
+engagement. Many people, especially in this day and age, want to express themselves and their hobbies
+in spaces they consider safe, inclusive, and fun, so we endeavoured to make a website exactly like this
+to support such endeavours. Our project's specific objectives are to foster community engagement and growth,
+expression of skills, talents, and hobbies, and provide a safe environment for this expression, free from
+judgment and bigotry, in an automated way.
+
+1. The main stakeholders of the are Houssam Khaled and Mohammad Aoun the two main developers of the 
+project:
+houssam khaled (backend developer)
+Mohammad Aoun (front end developer)
+
+2. In scope items:
+a. posting service where images and artwork can be posted.
+b. ability to include other social media like github, Instagram, and Twitter
+Out of scope:
+a. Algorithm for moderation according to guidelines.
+b. better security options for passwords
+3. Risks:
+Password exposure: Sight needs better encryption for passwords
+Inappropriate content: the site requires a combination of automated and volunteer moderation
+to ensure that the content posted is appropriate and safe for all users.
