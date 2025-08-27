@@ -1,0 +1,6 @@
+0. As a daily user of the website, I want to be able to post any post, be it a picture of an art piece
+I made.
+1. for the front end we used vanilla HTML, CSS, and JS
+for the backend, we used flask to connect the front end to the backend
+for the database, we used SQLite (the database was written in SQL)
+2. 
