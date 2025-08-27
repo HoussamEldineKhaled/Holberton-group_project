@@ -5,6 +5,8 @@ const form = document.getElementById("postForm");
 const submitBtn = document.getElementById("submitBtn");
 const clearBtn = document.getElementById("clearBtn");
 
+
+
 const userIdEl = document.getElementById("userId");
 const titleEl = document.getElementById("title");
 const descEl = document.getElementById("description");

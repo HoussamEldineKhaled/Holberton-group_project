@@ -6,6 +6,8 @@
     else fn();
   };
 
+
+
   onReady(() => {
     const API_BASE = (window.APP_CONFIG && window.APP_CONFIG.API_BASE) || "http://127.0.0.1:5000";
     const SIGNUP_ENDPOINT = `${API_BASE}/sign_up`;

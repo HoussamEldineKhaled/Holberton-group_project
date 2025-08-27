@@ -97,6 +97,8 @@ textarea {
     transition: opacity 0.2s ease;
 }
 
+
+
 .error-message.show {
     opacity: 1;
 }

@@ -6,6 +6,8 @@
     window.location.href = `login.html?return=${ret}`;
   }
 
+
+
   const postsList = document.getElementById('postsList');
   const metaEl = document.getElementById('meta');
   const pageInfo = document.getElementById('pageInfo');
