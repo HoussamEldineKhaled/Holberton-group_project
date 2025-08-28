@@ -1,0 +1,11 @@
+0. The result of our work is a website in which you can post videos, audio, and pictures of different pieces of art
+for all users to see. The website will include a system where moderators and an automated algorithm will
+monitor and control the posts posted per the community guidelines of the website. 
+Lessons Learned: More bug fixes, more flexible working on both front-end and back-end, and better transparency.
+1. The project is about making a website where users can post their artworks. The frontend was made with html css and js while the backend
+used python flask, CORS, and SQLite3. The database was made using SQLite. Backend includes many different functionalities like signing up, logging in,
+posting, liking, and commenting. The result was a fully working website with different functionalities. Future recommendations
+would include implementing encryption for passwords and an automated system which does moderation.
+2. The team was able to finish the project on time with a timely updates to the front end and the backend. Our main challenge is 
+managing the time to continue with our code in addition to bugs in the backend. When we used postman,
+the debugging of backend was much easier. 
